@@ -16,7 +16,7 @@ class DefaultHourClockHandRenderer : BaseClockHandRenderer(Color.BLUE), HourCloc
     override var minutes: Int
         get() = (((angle - hours * 30) / 30.0) * 60).toInt()
         set(value) {
-            angle = min(max(hours, 0), 11) * 30 + (value / 60f) * 30
+            angle = min(max(hours, 0), 11) * 30 + (min(value, 59) / 60f) * 30
         }
 
     override fun handLength(canvasSize: Int): Int {
