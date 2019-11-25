@@ -2,4 +2,4 @@
 
 Просто экспериментирую с кастомными вью на примере циферблата со стрелками
 
-<img src="./demonstration.gif" width=200/>
+<img src="./demonstration.gif" width=400/>
